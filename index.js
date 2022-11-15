@@ -1,5 +1,4 @@
 let prefersLightMode = true;
-let prefersDarkMode = false;
 
 const container = document.getElementById("container")
 const lightModeBtn = document.getElementById("light-mode-btn")
@@ -16,6 +15,16 @@ function switchModes() {
 }
 
 switchModes()
+
+darkModeBtn.addEventListener("click", function() {
+  prefersLightMode = false
+  switchModes()
+})
+
+lightModeBtn.addEventListener("click", function() {
+prefersLightMode = true
+switchModes()
+})
 
 function lightModeOn() {
     lightModeSwitch.classList.add("light-mode-switch")
@@ -37,12 +46,3 @@ function darkModeOn() {
     lightModeBtn.classList.remove("light-mode-btn")
 }
 
-darkModeBtn.addEventListener("click", function() {
-    prefersLightMode = false
-    switchModes()
-})
-
-lightModeBtn.addEventListener("click", function() {
-  prefersLightMode = true
-  switchModes()
-})
