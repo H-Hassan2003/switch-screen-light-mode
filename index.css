@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e9edc9;
+}
+
+.container {
+    background-color: white;
+    width: 90%;
+    margin: 2em auto;
+    height: 100px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1em;
+    color: #6d6875;
+    
+}
+
+.modes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modes#light-mode {
+    border-bottom: 1px solid #6d6875;
+}
+
+.switched-off {
+    align-self: center;
+    border: #6d6875 solid 1px;
+    width: 28px;
+    height: 16px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.switch-btn-off {
+    position: absolute;
+    top: -1px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: solid 1px #6d6875;
+    cursor: pointer;
+    background-color: white; 
+}
+
+/* light mode one */
+
+.light-mode-switch {
+    border-color: #0077b6;
+    background-color: #0077b6;
+}
+
+.light-mode-btn {
+    right: 0;
+    top: -1px;
+    border-color: #0077b6;
+    background-color: white; 
+}
+
+/* dark mode on */
+
+.dark-mode-container-background {
+    background-color: #403d39;
+    color: #ccc5b9;
+}
+
+.dark-mode-switch {
+    border-color: #0077b6;
+    background-color: #0077b6;
+}
+
+.dark-mode-btn {
+    right: 0;
+    top: -1px;
+    border-color: #0077b6;
+    background-color: white; 
+}
